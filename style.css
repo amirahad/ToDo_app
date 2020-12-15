@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Patrick Hand', cursive;
+    background-image: linear-gradient(450deg, #6274ad, #282D3D);
+    color: white;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+.container .header,
+.container .form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 5vh;
+    margin-top: 50px;
+}
+.container .header{
+    text-shadow: 0px 0px 10px rgb(192, 252, 29);
+    font-size: 2rem;
+    color: #dcdee4;
+}
+form input,
+form button{
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.5rem;
+    background: white;
+}
+form input{
+    width: 425px;
+    margin-bottom: 30px;
+}
+form button{
+    color:  #6274ad;
+    cursor: pointer;
+    transition: all o.5s ease;
+}
+form input:focus{
+    box-shadow: 0px 0px 10px rgb(192, 252, 29);
+    border: none;
+}
+form button:hover{
+    box-shadow: 0px 0px 10px rgb(192, 252, 29);
+    font-size: 1.5rem;
+    color:  rgb(192, 252, 29);
+    background-color: #6274ad;
+}
+.todo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 1vh;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+ }
+.todo li{
+    list-style-type: none;
+    margin: 0px;
+}
+.todo .todo-item,
+.todo button{
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.5rem;
+    background: white;
+}
+.todo-item{
+    color:  #6274ad;
+    width: 400px;
+    overflow-wrap: break-word;  
+}
+.complete-btn{ 
+     color: #0bac26;
+     cursor: pointer;
+}
+.trash-btn{
+    color: red;
+    cursor: pointer;
+}
+.complete-btn:hover i{
+    text-shadow:  0px 0px 5px rgb(60, 233, 25);
+}
+.trash-btn:hover i{
+    box-shadow:  0px 0px 5px rgb(240, 31, 16);
+}
+.fa-trash, .fa-check-square{
+    pointer-events: none;
+}
+.completedItem{
+    opacity: 0.3;
+    text-decoration-line: line-through;
+}
+
+
+/* RESPONSIVE DESIGN*/
+
+@media(max-width:467px){
+    .container .header{
+        font-size: 1rem;
+    }
+    form input{
+        width: 300px;
+    }
+    .todo-item{
+        width: 280px;
+    }
+}

@@ -31,6 +31,7 @@ form button{
     border: none;
     font-size: 1.5rem;
     background: white;
+    transition: all 0.5s ease;
 }
 form input{
     width: 425px;
@@ -39,7 +40,6 @@ form input{
 form button{
     color:  #6274ad;
     cursor: pointer;
-    transition: all o.5s ease;
 }
 form input:focus{
     box-shadow: 0px 0px 10px rgb(192, 252, 29);
@@ -48,6 +48,57 @@ form input:focus{
 form button:hover{
     box-shadow: 0px 0px 10px rgb(192, 252, 29);
     font-size: 1.5rem;
+    color:  rgb(192, 252, 29);
+    background-color: #6274ad;
+    transition: all o.5s ease;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+select{
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6274ad;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(192, 252, 29);;
+    cursor: pointer;
+}
+.select::after{
+    content: "\25bc";
+    width: 6rem;
+    color: white;
+    pointer-events: none;
+    position: absolute;
+    top: 7px;
+    right: 50px;
+}
+select:hover{
+    box-shadow: 0px 0px 10px rgb(192, 252, 29);
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 20px 0;
+}
+.btns .btn{
+    padding: 0px 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.active{
+    box-shadow: 0px 0px 10px rgb(192, 252, 29);
     color:  rgb(192, 252, 29);
     background-color: #6274ad;
 }

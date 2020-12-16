@@ -18,7 +18,10 @@ function addTodo(event){
     newTodo.innerText = todoInput.value;
     newTodo.classList.add( 'todo-item');
     todoDiv.appendChild(newTodo);
+    // var list = document.getElementsByClassName('todo-list')
+    // list.insertBefore(newTodo, list.childNodes[0]);
     if(todoInput.value === ""){
+        alert("You must write something!");
         return null;
     }
     //checked button adding

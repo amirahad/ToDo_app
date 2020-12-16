@@ -98,8 +98,7 @@ form button:hover{
     pointer-events: none;
 }
 .completedItem{
-    opacity: 0.3;
-    text-decoration-line: line-through;
+    opacity: 0.3; 
 }
 
 

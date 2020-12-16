@@ -46,10 +46,8 @@ function deleteCheck(e){
     if (item.classList[0] === "trash-btn") {
         const todo = item.parentElement;
         //ANIMATION TRANSITION
-        todo.classList.remove( 'animate__animated', 'animate__zoomInDown')
-        todo.classList.add('animate__animated','animate__backOutLeft');
-        todo.style.setProperty('animate-duration', '0.5s');      
-        // todo.style.setProperty('display', 'none');
+        todo.classList.remove(  'animate__zoomInDown')
+        todo.classList.add( 'animate__zoomOutUp'); 
         todo.addEventListener('transitionend', function() {
             todo.remove();
         } 

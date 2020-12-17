@@ -52,7 +52,7 @@ form button:hover{
     background-color: #6274ad;
     transition: all o.5s ease;
 }
-select{
+/* select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -101,7 +101,7 @@ select:hover{
     box-shadow: 0px 0px 10px rgb(192, 252, 29);
     color:  rgb(192, 252, 29);
     background-color: #6274ad;
-}
+} */
 .todo {
     display: flex;
     align-content: center;
@@ -125,6 +125,7 @@ select:hover{
     border: none;
     font-size: 1.5rem;
     background: white;
+    transition: all 0.5s ease;
 }
 .todo-item{
     color:  #6274ad;
